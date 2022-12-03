@@ -9,8 +9,7 @@ namespace AdventOfCode
         private static string Score(int[,] score) {
             var lines = File.ReadAllLines("..\\..\\day-2-rock-paper-scissors-stragey-guide.txt");
             var totalScore = 0;
-            foreach (var line in lines)
-            {
+            foreach (var line in lines) {
                 var turn = line.Split(' ');
                 var opponent = turn[0][0];
                 var you = turn[1][0];

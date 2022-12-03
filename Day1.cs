@@ -12,14 +12,10 @@ namespace AdventOfCode
             var lines = File.ReadAllLines("..\\..\\day-1-elf-calories.txt");
             var calorieCounts = new List<int>();
             var elfCalories = 0;
-            foreach (var line in lines)
-            {
-                if (int.TryParse(line, out int calories))
-                {
+            foreach (var line in lines) {
+                if (int.TryParse(line, out int calories)) {
                     elfCalories += calories;
-                }
-                else
-                {
+                } else {
                     calorieCounts.Add(elfCalories);
                     elfCalories = 0;
                 }
