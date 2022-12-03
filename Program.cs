@@ -20,7 +20,8 @@ namespace AdventOfCode {
         {
             (1, 1) => ElfCalories.MaxCarried(),
             (1, 2) => ElfCalories.SumOfTopThree(),
-            (2, 1) => RockPaperScisors.Score(),
+            (2, 1) => RockPaperScisors.ScoreWithMisunderstanding(),
+            (2, 2) => RockPaperScisors.ScoreWithUnderstanding(),
             _ => throw new Exception($"unsupported day of christmas {id.dayOfChristmas}, challenge {id.challengeNumber}."),
         };
     }
